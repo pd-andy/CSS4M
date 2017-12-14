@@ -1,0 +1,11 @@
+{
+  "sampler": {
+    "complete": "sampler # {\n  filename:  \n}",
+    "slim": "sampler # {\n  filename:  \n}"
+  },
+  "synth": {
+    "complete": "synth # { \n   /* osc params */ \n  waveform: 'saw' \n  gain: 1 \n  pan: 0.5 \n  glide: 1 \n  /* AD params */ \n  attack: 44 \n  decay: 22050 \n  /* note sequence */ \n  sequence:  [[  ][  ]] \n}",
+    "slim": "synth # {\n  sequence:  [[  ][  ]]\n}"
+  },
+  "meta": "meta {\n  bpm: 128\n}"
+}

@@ -1,0 +1,18 @@
+#editor {
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	border: none;
+	background-color: transparent;
+	resize: none;
+	outline: none;
+
+	font-family: monospace;
+	font-size: 12pt;
+	color: #eee8d5;
+}
+
+#editor::selection {
+	background-color: #073642;
+	color: #b58900;
+}

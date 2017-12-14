@@ -1,0 +1,44 @@
+{
+  "name": "css4m",
+  "productName": "Css4m",
+  "version": "0.0.0",
+  "description": "My first-class app",
+  "license": "MIT",
+  "repository": "pd-andy/css4m",
+  "author": {
+    "name": "Andrew Thompson",
+    "email": "athom058@gold.ac.uk",
+    "url": "github.com/pd-andy"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^1.0.0",
+    "moo": "^0.4.3"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^8.0.0",
+    "electron": "^1.3.3",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}

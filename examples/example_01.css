@@ -1,0 +1,60 @@
+meta {
+  bpm: 90
+}
+
+sampler #kick {
+  filename: '../audio/kick.wav'
+  sequence: [[1][4]]
+  gain: 2
+}
+
+sampler #snare {
+  filename: '../audio/snare.wav'
+  sequence: [[1 0][4]]
+  gain: 5
+}
+
+sampler #tom {
+  filename: '../audio/snare.wav'
+  sequence: [[2 2.5 2 3 5 8][16]]
+  gain: 1
+}
+
+sampler #hh_02 {
+  filename: '../audio/hh.wav'  
+  sequence: [[5 4 10][16]]
+  gain: 2
+}
+
+synth #a { 
+   /* osc params */ 
+  waveform: 'square' 
+  gain:0.5
+  pan: 0.5 
+  glide: 1
+  /* AD params */ 
+  attack: 44 
+  decay: 22050 
+  /* note sequence */ 
+  sequence: [[{%
+    return Math.random() * 20
+  %}][8]]
+}
+
+synth #b { 
+   /* osc params */ 
+  waveform: 'saw' 
+  gain: 0.1
+  pan: 0.5 
+  glide: 1
+  /* filter params */
+  /* AD params */ 
+  attack: 44 
+  decay: 205000 
+  /* note sequence */ 
+  sequence:  [[ 220 330 220 660 220 440 880 
+                220 330 220 660 220 440 880
+                220 330 220 660 220 440 880 
+                220 350 220 700 220 440 880 
+              ][ 16 ]] 
+}
