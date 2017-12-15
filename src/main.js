@@ -3,8 +3,8 @@ let { remote }  = require('electron');
 let path        = require('path');
 let appPath     = remote.app.getAppPath();
 
-const Events = require('events');
-const Event_Emitter = new Events.EventEmitter();
+const EventEmitter = require('eventemitter3');
+const Event_Emitter = new EventEmitter();
 
 // ----------------------------------------------------------------------------
 module.exports.Event_Bus = Event_Emitter;
